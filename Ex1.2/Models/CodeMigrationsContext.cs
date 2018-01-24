@@ -17,8 +17,11 @@ namespace Ex1._2.Models
     
         public CodeMigrationsContext() : base("name=CodeMigrationsContext")
         {
+
         }
 
         public System.Data.Entity.DbSet<Ex1._2.Models.User> Users { get; set; }
+
+        public DbSet<Order> Orders { get; set; }
     }
 }

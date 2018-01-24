@@ -169,6 +169,10 @@
     <Compile Include="Migrations\201801241052082_AddedEmailField.Designer.cs">
       <DependentUpon>201801241052082_AddedEmailField.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201801241128530_AddedOrderTable.cs" />
+    <Compile Include="Migrations\201801241128530_AddedOrderTable.Designer.cs">
+      <DependentUpon>201801241128530_AddedOrderTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CodeMigrationsContext.cs" />
     <Compile Include="Models\Order.cs" />
@@ -239,6 +243,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201801241052082_AddedEmailField.resx">
       <DependentUpon>201801241052082_AddedEmailField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201801241128530_AddedOrderTable.resx">
+      <DependentUpon>201801241128530_AddedOrderTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
