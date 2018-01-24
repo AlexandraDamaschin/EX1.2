@@ -1,0 +1,23 @@
+﻿﻿--------------------------------------------------------------------------------------------------------------------------------
+First 
+
+enable migrations for the first time: CodeMigrationsContext
+Enable-Migrations 
+
+enable migrations for a certain context in a certain folder
+Enable-Migrations -ContextTypeName Ex1._2.Models.CodeMigrationsContext -MigrationsDirectory Migrations\CodeMigrations
+
+--------------------------------------------------------------------------------------------------------------------------------
+Second 
+Add migrations and update database
+
+for the main migration
+add-Migration -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
+update-database -ConfigurationTypeName Library.Migrations.ApplicationUsersMigrations.Configuration
+
+for a certain migration
+add-Migration -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
+update-database -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
+
+--------------------------------------------------------------------------------------------------------------------------------
+test git 
