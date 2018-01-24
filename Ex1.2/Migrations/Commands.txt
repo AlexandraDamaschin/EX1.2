@@ -22,3 +22,4 @@ update-database -ConfigurationTypeName Library.Migrations.LibraryMigrations.Conf
 --------------------------------------------------------------------------------------------------------------------------------
 Rollback migrations
 update-database -TargetMigration: "AddedEmailField"
+update-database -TargetMigration: "AddedOrderTable"

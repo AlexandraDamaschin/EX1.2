@@ -46,7 +46,7 @@ namespace Ex1._2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,DeliveredOn,OrderOn,Value,FeedbackRating")] Order order)
+        public ActionResult Create([Bind(Include = "ID,DeliveredOn,OrderOn,Value")] Order order)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace Ex1._2.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,DeliveredOn,OrderOn,Value,FeedbackRating")] Order order)
+        public ActionResult Edit([Bind(Include = "ID,DeliveredOn,OrderOn,Value")] Order order)
         {
             if (ModelState.IsValid)
             {

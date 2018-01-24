@@ -14,7 +14,5 @@ namespace Ex1._2.Models
         public int ID { get; set; }
         public DateTime OrderOn { get; set; }
         public double Value { get; set; }
-        [Range(0,5)]
-        public int FeedbackRating { get; set; }
     }
 }
