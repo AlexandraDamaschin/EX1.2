@@ -14,5 +14,7 @@ namespace Ex1._2.Models
         public string LastName { get; set; }
         public DateTime DOB { get; set; }
 
+        public string Email { get; set; }
+
     }
 }
