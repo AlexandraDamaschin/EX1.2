@@ -20,4 +20,5 @@ add-Migration -ConfigurationTypeName Library.Migrations.LibraryMigrations.Config
 update-database -ConfigurationTypeName Library.Migrations.LibraryMigrations.Configuration
 
 --------------------------------------------------------------------------------------------------------------------------------
-test git 
+Rollback migrations
+update-database -TargetMigration: "AddedEmailField"
